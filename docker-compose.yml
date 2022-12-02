@@ -3,9 +3,9 @@ version: "3"
 services:
   web:
     build: .
-    command: python manage.py runserver 0:8000
+    command: python3 manage.py runserver 0:8000
     ports:
-      - "20002:8000"
+      - "20100:8000"
     volumes:
       - .:/web
     depends_on:
